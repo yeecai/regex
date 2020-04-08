@@ -45,7 +45,7 @@ for x in range(len(relt)):
    # print translation   
     print relt[x]
     data[relt[x]]= translation
-    result = json.dumps(data)
+    result = json.dumps(data, ensure_ascii=False)
     json_data = json.dumps(relt[x])
 
 
